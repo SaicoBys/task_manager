@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Tareas</title>
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+    <ul>
+        {% for task in tasks %}
+            <li>
+                <strong>{{ task.title }}</strong> - 
+                {% if task.completed %}✅ Completada{% else %}⏳ Pendiente{% endif %}
+            </li>
+        {% empty %}
+            <li>No hay tareas aún.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
