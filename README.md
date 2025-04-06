@@ -1,46 +1,87 @@
-# 🧠 Proyecto: Task Manager en Django
+# 🧠 Task Manager en Django
 
-Bienvenido de nuevo, Jacob. Este archivo es tu guía rápida para seguir desarrollando sin perder el hilo.
-
----
-
-## ✅ Estado actual del proyecto
-
-- Proyecto Django inicializado (`task_manager`)
-- App principal creada: `tasks`
-- Modelo `Task` creado y registrado
-- Admin configurado y funcional
-- Vista `task_list` conectada
-- URL `/tasks/` muestra tareas desde la base de datos
-- Template `task_list.html` funcional
+Proyecto de práctica para aprender desarrollo backend con Python y Django.  
+Permite gestionar tareas con funciones básicas de creación, visualización y administración desde el panel de Django o vistas web.
 
 ---
 
-## 🧪 Comandos para iniciar (cada vez que vuelvas)
+## 🚀 Funcionalidades
+
+- Modelo `Task` con campos: título y estado (completado)
+- Vista web para mostrar todas las tareas (`/tasks/`)
+- Admin de Django habilitado (`/admin`)
+- Template HTML funcional con bucles de renderizado
+- Estructura escalable para añadir formularios y estilos
+
+---
+
+## 🛠 Tecnologías utilizadas
+
+- Python 3.13
+- Django 5.2
+- SQLite3
+- HTML5 (Django templates)
+- Git & GitHub
+
+---
+
+## 📦 Instalación y uso local
+
+1. Clona el repositorio:
 
 ```bash
-cd ~/Developer/python/projects/task_manager
+git clone git@github.com:SaicoBys/task_manager.git
+cd task_manager
+```
+
+2. Activa el entorno virtual:
+
+```bash
 source env/bin/activate
+```
+
+3. Ejecuta el servidor:
+
+```bash
 python manage.py runserver
 ```
 
-Luego abre el navegador en:
-- `http://127.0.0.1:8000/tasks/` ← para ver la lista de tareas
-- `http://127.0.0.1:8000/admin/` ← para administrar tareas
+4. Abre el navegador en:
+
+- [http://127.0.0.1:8000/tasks/](http://127.0.0.1:8000/tasks/)
+- [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
 
 ---
 
-## 🔜 Próximos pasos sugeridos
+## 📌 Estructura del proyecto
 
-1. Crear tareas desde el panel admin
-2. Mostrar tareas creadas en la vista `/tasks/`
-3. Crear formulario web para añadir tareas
-4. Agregar botones para marcar tareas como completadas
-5. Estilizar con CSS para un look más profesional
-6. Dockerizar el proyecto
-7. Subirlo a la nube
-8. Conectar tu dominio `saicobys.me`
+```bash
+task_manager/
+├── task_manager/          # Configuración principal
+├── tasks/                 # App de gestión de tareas
+│   └── templates/
+│       └── tasks/
+│           └── task_list.html
+├── manage.py
+├── requirements.txt
+├── .gitignore
+├── README.md              # Versión pública
+└── DEV_NOTES.md           # Bitácora personal
+```
 
 ---
 
-¡A dormir tranquilo, que tu stack ya está en marcha! 😴
+## 📈 Próximos pasos
+
+- [ ] Crear tareas desde el sitio web
+- [ ] Añadir botones de completado
+- [ ] Mejorar diseño visual
+- [ ] Dockerizar la app
+- [ ] Subir a producción y conectar con [saicobys.me](https://saicobys.me)
+
+---
+
+## 👤 Autor
+
+**Jacob M. (@SaicoBys)**  
+Desarrollador en formación, compartiendo su camino de aprendizaje.
